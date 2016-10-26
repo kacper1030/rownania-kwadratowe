@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Napisy{
 	
+	public int a, b, c;
+	public int wa;
+	public int wb;
+	
 	public void ekranPowitalny(){
 		System.out.println("");
 		System.out.println("Witaj w programie!");
@@ -25,34 +29,40 @@ public class Napisy{
 		System.out.println("");
 		System.out.println("Wprowadz a");
 		
-		wpisDoZmiennejA(0);		// nastepuje wpis do zmiennej a
+		wpisDoZmiennejA();		// nastepuje wpis do zmiennej a
 		
 		System.out.println("Wprowadz b");
 		
-		wpisDoZmiennejB(0);		// nastepuje wpis do zmiennej b
+		wpisDoZmiennejB();		// nastepuje wpis do zmiennej b
 		
 		System.out.println("Wprowadz c");
 		
-		wpisDoZmiennejC(0);		// nastepuje wpis do zmiennej c
+		wpisDoZmiennejC();		// nastepuje wpis do zmiennej c
 	}
-	public void wpisDoZmiennejA(int a){ 	// wczytuje dane do zmiennej a
-		
+	public void wpisDoZmiennejA(){ 	// wczytuje dane do zmiennej a
+		int wa;
 		Scanner odczyt = new Scanner(System.in);
 		a = odczyt.nextInt();
 		System.out.println("Wpisano pomyślnie");
 		System.out.println("");
+		wa = a;
 	}
-	public void wpisDoZmiennejB(int b){		// wczytuje dane do zmiennej b
+	public void wpisDoZmiennejB(){		// wczytuje dane do zmiennej b
 		Scanner odczyt = new Scanner(System.in);
+		int wb;
 		b = odczyt.nextInt();
 		System.out.println("Wpisano pomyślnie");
 		System.out.println("");
+		wb = b;
 	}
-	public void wpisDoZmiennejC(int c){		// wczytuje dane do zmiennej c
+	public void wpisDoZmiennejC(){		// wczytuje dane do zmiennej c
 		Scanner odczyt = new Scanner(System.in);
+		int wc;
 		c = odczyt.nextInt();
 		System.out.println("Wpisano pomyślnie");
 		System.out.println("");
+		wc = c;
 	}
+	
 	
 }
