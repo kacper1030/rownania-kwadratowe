@@ -1,9 +1,17 @@
 package mainpackage;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-		System.out.println("Hello . It's first!");
+		
+		Wzory wzory = new Wzory();
+		Napisy napisy = new Napisy();
+		
+		napisy.ekranPowitalny();
+		
+		wzory.wzorP();
+		
+		
 	}
 
 }
